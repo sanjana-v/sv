@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjana Venkatesh — Portfolio</title>
+  <meta name="description" content="Portfolio of Sanjana Venkatesh — Data/Software Engineer & MS Analytics at USC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231d4ed8'/><text x='50' y='62' font-size='54' text-anchor='middle' font-family='Arial' fill='white'>SV</text></svg>">
+</head>
+<body>
+  <!-- Animated background accents -->
+  <div class="bg-accents" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Sanjana Venkatesh Home">
+      <span class="logo-mark">SV</span><span class="logo-text">Sanjana Venkatesh</span>
+    </a>
+    <nav class="nav" role="navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero section" id="about">
+      <div class="hero-grid">
+        <div class="hero-text" data-animate="slide-up">
+          <h1><span class="hi">Hi, I'm</span> <span class="name">Sanjana Venkatesh</span></h1>
+          <p class="tagline">Data/Software Engineer • MS Analytics @ USC</p>
+          <ul class="quick">
+            <li><a href="tel:+12139131568" aria-label="Call Sanjana">(213) 913-1568</a></li>
+            <li><a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sanjana1venkatesh/">LinkedIn</a></li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/sanjana-v">GitHub</a></li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#experience">Work Experience</a>
+          </div>
+        </div>
+        <figure class="hero-photo" data-animate="float">
+          <img src="img/sanjana-venkatesh.jpg" alt="Sanjana smiling in a forest with giant trees" />
+          <figcaption>Los Angeles, CA</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <h2 data-animate="fade-in">Experience</h2>
+      <div class="timeline">
+        <article class="card" data-animate="slide-up">
+          <header class="card-h">
+            <h3>SAG-AFTRA Health — Data Analyst Intern</h3>
+            <span class="meta">Burbank, CA · May 2024 – Aug 2024</span>
+          </header>
+          <ul class="card-list">
+            <li>Engineered a Python service to update ThoughtSpot worksheet metadata from Snowflake via REST APIs, improving integrity and cutting manual edits by <strong>57%</strong>.</li>
+            <li>Built ingestion pipelines from ThoughtSpot APIs into Snowflake, reducing per-query retrieval time by <strong>12 minutes</strong> and unblocking analytics use cases.</li>
+            <li>Shaped dimensional models (Star/Snowflake) in BigQuery/Redshift to accelerate reporting; partnered with stakeholders to productionize dashboards supporting ops decisions.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-animate="slide-up" style="--delay: .1s">
+          <header class="card-h">
+            <h3>Quantiphi Analytics Inc — Data/Software Engineer (Team: Google Cloud Analytics)</h3>
+            <span class="meta">Bengaluru, India · Feb 2021 – Jul 2023</span>
+          </header>
+          <ul class="card-list">
+            <li>Led cloud migration of Hadoop applications and PostgreSQL datasets to GCP Dataproc with CI/CD via GitHub Actions; delivered zero-downtime cutover and <strong>$95K+/year</strong> savings.</li>
+            <li>Directed 8-engineer effort to move <strong>1,500+</strong> Cloudera tables; built Airflow/Python + GCP DVT checks, preserving <strong>99%+</strong> migration accuracy and compliance.</li>
+            <li>Converted manual ETL for high-throughput financial feeds into API-driven workflows with Airflow & Python, saving <strong>16 hours/day</strong> in ops effort.</li>
+            <li>Migrated Amazon RDS PostgreSQL to GCP AlloyDB using staged replication and scripted cutover with <strong>zero downtime</strong>.</li>
+            <li>Tuned Spark jobs via Spark UI and optimized Dataproc autoscaling (preemptible workers, local SSD balancing) to increase throughput and resilience while lowering cost.</li>
+            <li>Launched real-time monitoring via Tableau/Power BI enabling on-call and business teams to track SLAs and act faster.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2 data-animate="fade-in">Projects</h2>
+      <div class="cards">
+        <article class="card" data-animate="slide-up">
+          <header class="card-h">
+            <h3>Intelligent Fab Monitoring &amp; Maintenance System</h3>
+            <span class="meta">Python, React.js, Flask, XGBoost, WebSockets</span>
+          </header>
+          <ul class="card-list">
+            <li>Built a real-time analytics system to track 15K+ devices; integrated Leaflet.js for map visualization to reduce manual monitoring.</li>
+            <li>Processed 100K+ RTLS logs with Python, Pandas, and Shapely; integrated XGBoost (82% accuracy) to predict machine RUL.</li>
+            <li>Implemented real-time alerting with WebSockets and REST APIs; won <strong>1st place</strong> at USC capstone showcase.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-animate="slide-up" style="--delay: .08s">
+          <header class="card-h">
+            <h3>Retail Data Analytics</h3>
+            <span class="meta">Tableau, Apache Airflow, dbt, BigQuery, GCS, Python</span>
+          </header>
+          <ul class="card-list">
+            <li>Automated an end-to-end ETL pipeline with Airflow DAGs to ingest and transform data from GCS to BigQuery.</li>
+            <li>Launched interactive Tableau dashboards, reducing manual reporting by <strong>48%</strong> and enabling real-time insights.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-animate="slide-up" style="--delay: .16s">
+          <header class="card-h">
+            <h3>Click-Through Rate (CTR) Prediction</h3>
+            <span class="meta">Python, scikit-learn, XGBoost</span>
+          </header>
+          <ul class="card-list">
+            <li>End-to-end CTR system on ad-interaction logs; engineered temporal & categorical features, with reproducible training pipeline.</li>
+            <li>XGBoost achieved <strong>0.88</strong> accuracy and F1/precision/recall, outperforming Logistic Regression (0.72 acc, 0.70 F1) by +16pp accuracy and +0.18 F1.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 data-animate="fade-in">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill b" data-animate="pop"><h4>Programming</h4><p>Python (NumPy, Pandas, Matplotlib, Seaborn), SQL, Jupyter Notebook, SAP</p></div>
+        <div class="skill b" data-animate="pop" style="--delay:.05s"><h4>DevOps</h4><p>Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins, Terraform), Flask, Django</p></div>
+        <div class="skill b" data-animate="pop" style="--delay:.1s"><h4>Data Engineering &amp; Cloud</h4><p>MySQL, Snowflake, PostgreSQL, JSON, XML, GCP (BigQuery, Dataproc, AlloyDB, Vertex AI, DataFlow), AWS (RDS, EC2, S3, SageMaker, Redshift), Data Warehousing &amp; ETL</p></div>
+        <div class="skill b" data-animate="pop" style="--delay:.15s"><h4>Big Data &amp; Analytics</h4><p>Apache Airflow, Hadoop, Spark, Power BI, Tableau, ThoughtSpot, Looker, Excel, A/B Testing</p></div>
+        <div class="skill b" data-animate="pop" style="--delay:.2s"><h4>Machine Learning</h4><p>TensorFlow, Keras, OpenCV, YOLO, LightGBM, OpenAI (GPT), NLP, PyTorch, Scikit-learn</p></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <h2 data-animate="fade-in">Education</h2>
+      <div class="edu">
+        <article class="card" data-animate="slide-up">
+          <header class="card-h">
+            <h3>University of Southern California</h3>
+            <span class="meta">Master of Science in Analytics · GPA 3.8/4.0 · Aug 2023 – May 2025 · Los Angeles, CA</span>
+          </header>
+          <p>Relevant skills: Data Analysis/Visualization, Modeling, Statistics, Algorithms, Data Structures, Database Systems. Teaching Assistant: ITP 259 — Basics of Artificial Intelligence (assisted 150+ students).</p>
+        </article>
+        <article class="card" data-animate="slide-up" style="--delay:.1s">
+          <header class="card-h">
+            <h3>BMS College of Engineering</h3>
+            <span class="meta">Bachelor of Technology in Computer Science · GPA 3.7/4.0 · Jun 2017 – May 2021 · Bengaluru, India</span>
+          </header>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certs">
+      <h2 data-animate="fade-in">Certifications</h2>
+      <ul class="certs">
+        <li data-animate="slide-up">Associate Cloud Engineer (Google Cloud) — May 2022 – May 2025</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2 data-animate="fade-in">Let's Connect</h2>
+      <p class="lead">Open to Data/Software Engineering roles, internships, and collaborative projects.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:sv51119@usc.edu">Email Me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/sanjana1venkatesh/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sanjana Venkatesh · Built with ♥ in white &amp; blue.</p>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const ul = document.querySelector('#nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      ul.classList.toggle('open');
+    });
+
+    // Simple scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.16 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
